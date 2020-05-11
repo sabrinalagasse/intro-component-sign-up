@@ -13,11 +13,96 @@ body {
   font-size: 16px;
   background-color: hsl(0, 100%, 74%);
   background-image: url(images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 500px) {
   html,
   body {
     background-image: url(images/bg-intro-desktop.png);
   }
+}
+
+main {
+  margin: 0px 25px 0px 25px;
+}
+#about {
+  margin-top: 90px;
+}
+#about > h1 {
+  margin: 0px 50px 0px 50px;
+}
+
+#about > p {
+  margin-top: 25px;
+}
+
+#try-it {
+  background-color: hsl(248, 32%, 49%);
+  margin-top: 65px;
+  height: 84px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#try-it > p {
+  margin: 0px 75px 0px 75px;
+}
+
+form {
+  background-color: white;
+  color: hsl(249, 10%, 26%);
+  margin-top: 25px;
+  margin-bottom: 60px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+input,
+button {
+  /* margin: 0px 25px 15px 25px; */
+  height: 50px;
+  outline: none;
+}
+
+input {
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+
+form > button {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+form > p {
+  font-size: 10px;
+  margin: 15px 25px 0px 25px;
+  color: hsl(246, 25%, 77%);
+}
+a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.2);
 }
